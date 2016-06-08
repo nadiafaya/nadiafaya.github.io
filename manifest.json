@@ -1,0 +1,7 @@
+{
+  "name": "nadiafaya-github-io",
+  "short_name": "nadiafaya-github-io",
+  "description": "personal site",
+  "start_url": "/",
+  "display": "standalone"
+}

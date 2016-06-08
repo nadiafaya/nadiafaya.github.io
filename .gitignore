@@ -1,0 +1,5 @@
+# Generated files/folders
+build
+
+# Dev directories
+bower_components
