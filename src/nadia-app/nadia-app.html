@@ -1,13 +1,28 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
+
 
 <dom-module id="nadia-app">
+  <!-- import flexbox classes in this element -->
+  <style include="iron-flex iron-flex-alignment"></style>
   <template>
     <style>
       :host {
-        display: block;
+        @apply(--layout-vertical);
+        text-align: center;
+      }
+      h1 {
+        @apply(--paper-font-headline);
+      }
+      p {
+        @apply(--paper-font-subhead);
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <h1>Website comming soon</h1>
+    <p>In the mean time, if you wish to reach Nadia, send an email to: 
+      <a href="mailto:[[mailAddress]]">[[mailAddress]]</a>
+    </p>
   </template>
 
   <script>
@@ -16,9 +31,9 @@
       is: 'nadia-app',
 
       properties: {
-        prop1: {
+        mailAddress: {
           type: String,
-          value: 'nadia-app',
+          value: 'nadiafaya@gmail.com',
         },
       },
 

@@ -1,9 +1,11 @@
 {
   "name": "nadiafaya-github-io",
-  "description": "personal site",
+  "description": "Nadia Faya's personal site",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.3.1",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.4"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

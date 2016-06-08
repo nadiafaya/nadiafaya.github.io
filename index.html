@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <!-- element imports -->
+    <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout-classes.html">
     <link rel="import" href="/src/nadia-app/nadia-app.html">
+    <!-- styles -->
+    <link rel="import" href="bower_components/paper-styles/classes/typography.html">
+    <style is="custom-style" include="iron-flex iron-flex-alignment iron-positioning"></style>
+    <style type="text/css">
+      body {
+        background-image: url("/images/comming-soon-background.jpg");
+        background-size: cover;
+      }
+    </style>
   </head>
-  <body>
+  <body class="fullbleed vertical layout">
     <nadia-app></nadia-app>
   </body>
 </html>
