@@ -1,7 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="../../bower_components/paper-styles/typography.html">
-
+<link rel="import" href="home-button.html">
 
 <dom-module id="nadia-app">
   <!-- import flexbox classes in this element -->
@@ -13,16 +12,23 @@
         text-align: center;
       }
       h1 {
-        @apply(--paper-font-headline);
+        font-size: 3em;
       }
-      p {
-        @apply(--paper-font-subhead);
+      p.leadText {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .home-button-container {
+        width: 50%;
+        margin: 10% auto;
       }
     </style>
-    <h1>Website comming soon</h1>
-    <p>In the mean time, if you wish to reach Nadia, send an email to: 
-      <a href="mailto:[[mailAddress]]">[[mailAddress]]</a>
-    </p>
+    <h1>Nadia Faya</h1>
+    <p class="leadText">Web developer con +5 años de experiencia</p>
+    <div class="home-button-container layout horizontal center justified">
+      <home-button text="Sobre mi" link="#about"></home-button>
+      <home-button text="Contactarme" link="#contact"></home-button>
+    </div>
   </template>
 
   <script>
