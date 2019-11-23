@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Nadia Faya</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			background-image: url('images/comming-soon-background.jpg');
-			background-size: cover;
-			overflow: hidden;
-			font-family: 'Open Sans', sans-serif;
-		}
-
-		.main {
-			margin: 0 20px;
-			text-align: center;
-		}
-
-		.lead-text {
-			font-size: 40px;
-		}
-	</style>
+  <title>Nadia Faya</title>
+  <meta name="Description" content="Nadia Faya's profile.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<section class="main">
-		<p class="lead-text">Website comming soon</p>
-		<p class="small">In the mean time, if you wish to reach Nadia, send an email to: <a href="mailto:nadiafaya@gmail.com?subject=From%20website%3A">nadiafaya@gmail.com</a></p>
-	</section>
+  <section class="container">
+    <div class="left">
+      <h1>Hello, I am Nadia Faya</h1>
+      <p>I'm a Web Developer with <span class="years-of-experience">9</span>+ years of experience</p>
+      <a class="contact-me-button" href="mailto:nadiafaya@gmail.com?subject=[From Portfolio]">Contact me</a>
+    </div>
+    <div class="right">
+      <img src="images/profile-picture.jpg" alt="Nadia Faya">
+    </div>
+  </section>
+  <script type="text/javascript">
+    function onDOMReady(callback) {
+      document.addEventListener("DOMContentLoaded", callback);
+      if (document.readyState === "interactive" || document.readyState === "complete" ) {
+        callback();
+      }
+    }
+    onDOMReady(function() {
+      var experienceElement = document.querySelector('.years-of-experience');
+      experienceElement.innerText = (new Date()).getFullYear() - 2011;
+    });
+  </script>
 </body>
 </html>
